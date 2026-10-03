@@ -1,0 +1,20 @@
+name: sync_refresh
+description: >-
+  Synchronized JWT token refresh for Dio: parallel 401s trigger exactly one
+  refresh, every failed request is replayed once with the fresh token, and a
+  dead refresh tears the session down through a single callback. Storage and
+  refresh endpoint are yours — the coordination is the package's.
+version: 0.1.0
+repository: https://github.com/hossam1244/sync_refresh
+issue_tracker: https://github.com/hossam1244/sync_refresh/issues
+topics: [dio, http, interceptor, jwt, authentication]
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  dio: ^5.0.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0
